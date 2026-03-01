@@ -1,10 +1,6 @@
 # =============================
 # ImageMagick
 # =============================
-import moviepy.config as cfg
-cfg.change_settings({
-    "IMAGEMAGICK_BINARY": r"C:\Program Files\ImageMagick-7.1.2-Q16-HDRI\magick.exe"
-})
 
 import streamlit as st
 from openai import OpenAI
@@ -230,4 +226,5 @@ elif st.session_state.step == 4:
         st.success("完成しました！")
 
     if st.button("← 戻る"):
+
         st.session_state.step = 3
